@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;      
+
+}
+.container{
+    width: 1536px;
+    height: 100vh;
+    /* background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    background-color: rgba(251,211,209,255);
+}
+.navbar{
+    height: 13%;
+    display: flex;
+    align-items: center;
+}
+h1{
+    /* color: rgba(251,211,209,255); */
+    color: white;
+    margin-left: 12px;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background-image: url(../img/download.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    margin-left: 150px;
+}
+.logo:hover{
+    background-image: url(../img/h1-client-11-hover.png);
+
+}
+/* .row col{
+    display: flex;
+} */
+.container video{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 17px;
+  border-style: none;
+}
+.example{
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+
+}
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 0px ;
+    float: left;
+    width: 80%;
+    background: #f8f6f6;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: rgb(65,150,201);
+    color: white;
+    font-size: 17px;
+    border: 0px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  form.example button:hover {
+    background: black;
+  }
+
+
+  
