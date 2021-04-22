@@ -1,0 +1,49 @@
+.gray{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: gray;
+
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+.red{
+    width: 600px;
+    height: 600px;
+    background-color: red;
+}
+.green{
+    width: 700px;
+    height: 250px;
+    background-color: green;
+    margin-bottom: 30px;
+}
+.pp{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.pink{
+    width: 400px;
+    height: 320px;
+    background-color: pink;
+}
+.purple{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.purple-1{
+    width: 280px;
+    height: 150px;
+    background-color: purple;
+}
+.purple-2{
+    width: 280px;
+    height: 150px;
+    background-color: purple;
+}

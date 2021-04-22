@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    width: 1536px;
+    height: 100vh;
+    background-image:url(../img/h1-rev-bcgr-img.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    display: table;
+}
+/* .nav{
+    position: fixed;
+  
+} */
+.left{
+    float: left;
+}
+.left ul{
+    list-style: none;
+    padding: 1.5em 3em;
+}
+.left ul li{
+    display: inline-block;
+}
+.left ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    padding: 8px 16px;
+}
+.right{
+    float: right;
+}
+.right ul{
+    list-style: none;
+    padding: 1.5em 3em;
+}
+.right ul li{
+    display: inline-block;
+}
+.right ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    padding: 8px 16px;
+}
+
+.right li:nth-child(2) a{
+    border: 1px solid #000;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.right li:nth-child(2) a:hover{
+    border: 1px solid #fff;
+  
+}
+.header{
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.header h1{
+    color:#000;
+    font-size: 46px;
+    text-shadow: -1px -3px 6.5px #000000;
+    padding-bottom: 5px;
+}
+.header p{
+    color: black;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.form{
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+input{
+    width: 100%;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid black;
+    height: 40px;
+}
+::-webkit-input-placeholder{
+    color: black;
+    font-size: 12px;
+
+}
+#msg{
+    margin-top: 30px;
+    height: 100px;
+}
+button{
+    padding: 20px 32px;
+    font-size: 16px;
+    border: none;
+    margin-top: 30px;
+    color: #000;
+}
+button{
+    width: 180px;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.4s;   
+}
+button:hover{
+    color:white;
+    background-color: black;
+}
+label{
+    margin-top: 20px;
+    font-size: 12px;
+
+    float: left;
+
+}

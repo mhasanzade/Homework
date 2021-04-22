@@ -1,0 +1,35 @@
+.gray{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+}
+.left{
+    background-color: red;
+    /* width: 50%; */
+}
+.right{
+    /* width: 50%; */
+    flex-direction: row;
+
+}
+.green{
+    /* width: 100%; */
+    height: 40%;
+    background-color: green;
+    display: flex;
+}
+.pink{
+    width: 50%;
+    height: 60%;
+    background-color: pink;
+    display: flex;
+}
+.purple{
+    width: 50%;
+    height: 60%;
+    background-color: purple;
+    display: flex;
+}
