@@ -1,0 +1,97 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body #container {
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/photo.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/photo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body #container #calculator {
+  width: 320px;
+  height: 520px;
+  background-color: #eaedef;
+  margin: 0 auto;
+  top: 20px;
+  position: relative;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body #container #calculator #result {
+  height: 120px;
+}
+
+body #container #calculator #result #history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: black;
+}
+
+body #container #calculator #result #output {
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  font-size: 30px;
+}
+
+body #container #calculator #keyboard {
+  height: 400px;
+}
+
+body #container #calculator #keyboard .operator, body #container #calculator #keyboard .number, body #container #calculator #keyboard .empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+body #container #calculator #keyboard .number, body #container #calculator #keyboard .empty {
+  background-color: #eaedef;
+}
+
+body #container #calculator #keyboard .number, body #container #calculator #keyboard .operator {
+  cursor: pointer;
+}
+
+body #container #calculator #keyboard .number:active, body #container #calculator #keyboard .operator:active {
+  font-size: 13px;
+}
+
+body #container #calculator #keyboard button:nth-child(4) {
+  font-size: 20px;
+  background-color: #20b2aa;
+}
+
+body #container #calculator #keyboard button:nth-child(8) {
+  font-size: 20px;
+  background-color: #ffa500;
+}
+
+body #container #calculator #keyboard button:nth-child(12) {
+  font-size: 20px;
+  background-color: #f08080;
+}
+
+body #container #calculator #keyboard button:nth-child(16) {
+  font-size: 20px;
+  background-color: #7d93e0;
+}
+
+body #container #calculator #keyboard button:nth-child(20) {
+  font-size: 20px;
+  background-color: #9477af;
+}
+/*# sourceMappingURL=style.css.map */

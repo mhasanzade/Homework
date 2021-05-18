@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Time</title>
+</head>
+
+    <!-- <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+    
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+    
+    <button onclick="document.getElementById('myImage').src='img/light.gif'">Turn on the light</button>
+    
+    <img id="myImage" src="img/dark.gif" style="width:100px">
+    
+    <button onclick="document.getElementById('myImage').src='img/dark.gif'">Turn off the light</button>
+   <br>
+   <br>
+    <button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var time = new Date().getHours();
+  var greeting;
+  if (time < 10) {
+    greeting = "Good morning";
+  } else if (time < 20) {
+    greeting = "Good day";
+  } else {
+    greeting ="Good evening";
+  }
+document.getElementById("demo").innerHTML = greeting;
+}
+</script>
+    
+    
+    
+<form action="/action_page.php">
+    <label for="appt">Select a time:</label>
+    <input type="time" id="appt" name="appt">
+    <input type="submit">
+  </form>
+    
+     -->
+     <body>
+         
+     <h1 class="hello">Hello, let's play game :)</h1>
+     <div class="input_div">
+        <input type="text" onclick="timepicker(this,'a')" placeholder="Click here to select time">
+    </div>
+    
+    
+    <div class="timepicker_wrapper" >
+        <div class="modal-content">
+            <div class="timepicker_wrapper_main">
+                <p class="timepicker_header">
+                    <b>12</b>:<b>00</b>
+                </p>
+                <div class="timepicker_data_select">
+                    <select onchange="changeTimepickerheader(this,'1')" size="5" class="timepicker_hour"></select>
+                    <select onchange="changeTimepickerheader(this,'2')" size="5"  class="timepicker_minute"></select>
+                   
+                </div>
+                <div class="timepicker_control">
+                    <button onclick="timepicker(this,'s'); myFunction" id="button">Set</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<div id="myDIV"  >
+<h1 id="text"></h1>
+</div>
+
+
+ <div class="image">
+<img  alt="" id="myImg">
+</div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #eebcb5;
+    
+    // background: linear-gradient(90deg);
+    
+}
+.hello{
+    width: 100%;
+    height: 200px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    animation: bounceInDown;
+    animation-duration: 2s;
+}
+.modal-content{
+    border-radius: 17px;
+}
+.input_div{
+    text-align: center;
+    // margin-top: 15em; 
+    animation: bounceInDown;
+    animation-duration: 3s;
+    border-radius: 17px;
+}
+
+.input_div input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 17px;
+}
+
+.modal-content{
+    margin: 9em auto;
+    width: fit-content;
+    background-color: white;
+}
+
+.timepicker_wrapper{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000082;
+    width: 100%;
+    height: 100vh;
+}
+
+.timepicker_hour,
+.timepicker_minute,
+.timepicker_ampm{
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    border: 1px solid #80808080;
+    color: #0000009e;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.timepicker_hour::-webkit-scrollbar,
+.timepicker_minute::-webkit-scrollbar,
+.timepicker_ampm::-webkit-scrollbar{ 
+    display: none;  
+}
+
+.timepicker_hour option,
+.timepicker_minute option,
+.timepicker_ampm option{
+    font-weight: bold;
+    padding: 5px 25px;
+}
+
+.timepicker_control{
+    text-align: end;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.timepicker_control button{
+    padding: 7px 15px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    background-color: #eb9b81;
+    color: white;
+    margin-left: 8px;
+}
+.timepicker_wrapper_main{
+    width: fit-content;
+    border: 1px solid gray;
+    padding: 0px 12px;
+    border-radius: 17px;
+
+}
+
+.timepicker_control button:first-child{
+    color: white;
+    margin-right: 15px;
+}
+
+.timepicker_header{text-align: center;color: #0000008a;margin: 5px 0px;}
+#myDIV{
+    width: 100%;
+    padding: 30px 0;
+    // height: 150px;
+    text-align: center;
+    // background-color: lightblue;
+    margin-top: 50px;
+    font-size: 100px;
+    // display: none;
+    // color: white;
+    // animation: bounceInDown;
+    // animation-duration: 2s;
+  }
+  #text{
+    // animation: bounceInDown;
+    // animation-duration: 2s;
+  }
+
+  .image{
+      width: 100%;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+  }
+#myImg{
+    width: 800px;
+    // box-shadow: #f4c3c4 20px 20px ;
+}
+
