@@ -1,0 +1,56 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: url(../img/background.png) no-repeat center fixed;
+  background-size: cover;
+}
+
+body .clock {
+  width: 320px;
+  height: 320px;
+  background-color: rgba(255, 255, 255, 0.06);
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 30px 30px 35px rgba(0, 0, 0, 0.25);
+          box-shadow: 30px 30px 35px rgba(0, 0, 0, 0.25);
+}
+
+body .clock .hand {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  margin: auto;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+body .clock .hour {
+  height: 70px;
+  width: 9px;
+  top: 90px;
+}
+
+body .clock .minute {
+  height: 85px;
+  width: 5px;
+  top: 75px;
+}
+
+body .clock .seconds {
+  height: 95px;
+  width: 3px;
+  top: 65px;
+}
+/*# sourceMappingURL=style.css.map */

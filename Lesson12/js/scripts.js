@@ -47,46 +47,82 @@ function timepicker(el,S){
             c_t.value = hr+":"+min;
             div.style.display = "none";
         }
-        if (hr < 12 && hr >= 6){
-            var text = "Good morning!";
-            document.getElementById('myDIV').style.color = '#ebf4c3'; 
-            document.getElementById('myDIV').style.textShadow = ' 5px -2px 10px';
-            document.getElementById('myDIV').style.animation= "zoomIn 2s";
-            document.getElementById("myImg").src = "../img/morning.jpg";
-            document.getElementById('myImg').style.boxShadow = '#ebf4c3 0px 0px 70px 0px';
-            document.getElementById('myImg').style.animation= "zoomIn 2s" ;
-        }
-        else if (hr >= 12 && hr < 18){
+        // if (hr < 12 && hr >= 6){
+        //     var text = "Good morning!";
+        //     document.getElementById('myDIV').style.color = '#ebf4c3'; 
+        //     document.getElementById('myDIV').style.textShadow = ' 5px -2px 10px';
+        //     document.getElementById('myDIV').style.animation= "zoomIn 2s";
+        //     document.getElementById("myImg").src = "../img/morning.jpg";
+        //     document.getElementById('myImg').style.boxShadow = '#ebf4c3 0px 0px 70px 0px';
+        //     document.getElementById('myImg').style.animation= "zoomIn 2s" ;
+        // }
+        // else if (hr >= 12 && hr < 18){
           
-            var text = "Good afternoon!";
-            document.getElementById('myDIV').style.color = '#f65437';  
-            document.getElementById('myDIV').style.textShadow = ' 5px -2px 10px';
-            document.getElementById('myDIV').style.animation= "zoomIn 3s";
-            document.getElementById("myImg").src = "../img/afternoon.jpg";
-            document.getElementById('myImg').style.boxShadow = 'rgb(246 84 55) 0px 0px 70px 0px';
-            document.getElementById('myImg').style.animation= "zoomIn 2s";
-        }
+        //     var text = "Good afternoon!";
+        //     document.getElementById('myDIV').style.color = '#f65437';  
+        //     document.getElementById('myDIV').style.textShadow = ' 5px -2px 10px';
+        //     document.getElementById('myDIV').style.animation= "zoomIn 3s";
+        //     document.getElementById("myImg").src = "../img/afternoon.jpg";
+        //     document.getElementById('myImg').style.boxShadow = 'rgb(246 84 55) 0px 0px 70px 0px';
+        //     document.getElementById('myImg').style.animation= "zoomIn 2s";
+        // }
            
-        else if (hr >=18 && hr <= 23){
-            var text = "Good evening!";
-            document.getElementById('myDIV').style.color = '#7b62a4';  
-            document.getElementById('myDIV').style.textShadow = ' 5px -2px 10px';
-            document.getElementById('myDIV').style.animation= "zoomIn 1s";
-            document.getElementById("myImg").src = "../img/evening.png";
-            document.getElementById('myImg').style.boxShadow = '#7b62a4 0px 0px 70px 0px';
-            document.getElementById('myImg').style.animation= "zoomIn 2s"
+        // else if (hr >=18 && hr <= 23){
+        //     var text = "Good evening!";
+        //     document.getElementById('myDIV').style.color = '#7b62a4';  
+        //     document.getElementById('myDIV').style.textShadow = ' 5px -2px 10px';
+        //     document.getElementById('myDIV').style.animation= "zoomIn 1s";
+        //     document.getElementById("myImg").src = "../img/evening.png";
+        //     document.getElementById('myImg').style.boxShadow = '#7b62a4 0px 0px 70px 0px';
+        //     document.getElementById('myImg').style.animation= "zoomIn 2s"
             
-        }
-        else {
-            var text = "Good night!";
-            document.getElementById('myDIV').style.color = '#503131';  
-            document.getElementById('myDIV').style.textShadow = ' 5px -2px 10px';
-            document.getElementById('myDIV').style.animation= "zoomIn 4s";
-            document.getElementById("myImg").src = "../img/night.png";
-            document.getElementById('myImg').style.boxShadow = '#503131 0px 0px 70px 0px';
-            document.getElementById('myImg').style.animation= "bounceInDown 2s"
-        }
-
+        // }
+        // else {
+        //     var text = "Good night!";
+        //     document.getElementById('myDIV').style.color = '#503131';  
+        //     document.getElementById('myDIV').style.textShadow = ' 5px -2px 10px';
+        //     document.getElementById('myDIV').style.animation= "zoomIn 4s";
+        //     document.getElementById("myImg").src = "../img/night.png";
+        //     document.getElementById('myImg').style.boxShadow = '#503131 0px 0px 70px 0px';
+        //     document.getElementById('myImg').style.animation= "bounceInDown 2s"
+        // }
+        switch (true) {
+            case hr < 12 && hr >= 6:
+                var text = "Good morning!";
+                document.getElementById('myDIV').style.color = '#ebf4c3'; 
+                document.getElementById('myDIV').style.textShadow = ' 5px -2px 10px';
+                document.getElementById('myDIV').style.animation= "zoomIn 2s";
+                document.getElementById("myImg").src = "../img/morning.jpg";
+                document.getElementById('myImg').style.boxShadow = '#ebf4c3 0px 0px 70px 0px';
+                document.getElementById('myImg').style.animation= "zoomIn 2s" ;
+              break;
+            case hr >= 12 && hr < 18:
+                var text = "Good afternoon!";
+                document.getElementById('myDIV').style.color = '#f65437';  
+                document.getElementById('myDIV').style.textShadow = ' 5px -2px 10px';
+                document.getElementById('myDIV').style.animation= "zoomIn 3s";
+                document.getElementById("myImg").src = "../img/afternoon.jpg";
+                document.getElementById('myImg').style.boxShadow = 'rgb(246 84 55) 0px 0px 70px 0px';
+                document.getElementById('myImg').style.animation= "zoomIn 2s";
+              break;
+            case hr >=18 && hr <= 23:
+                var text = "Good evening!";
+                document.getElementById('myDIV').style.color = '#7b62a4';  
+                document.getElementById('myDIV').style.textShadow = ' 5px -2px 10px';
+                document.getElementById('myDIV').style.animation= "zoomIn 1s";
+                document.getElementById("myImg").src = "../img/evening.png";
+                document.getElementById('myImg').style.boxShadow = '#7b62a4 0px 0px 70px 0px';
+                document.getElementById('myImg').style.animation= "zoomIn 2s";
+              break;
+            case hr < 6 && hr >= 0:
+                var text = "Good night!";
+                document.getElementById('myDIV').style.color = '#503131';  
+                document.getElementById('myDIV').style.textShadow = ' 5px -2px 10px';
+                document.getElementById('myDIV').style.animation= "zoomIn 4s";
+                document.getElementById("myImg").src = "../img/night.png";
+                document.getElementById('myImg').style.boxShadow = '#503131 0px 0px 70px 0px';
+                document.getElementById('myImg').style.animation= "bounceInDown 2s";
+          }
 
         document.getElementById("myDIV").innerHTML= text;
         document.getElementById("myImg").innerHTML= myImg;
