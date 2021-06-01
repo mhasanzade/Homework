@@ -1,0 +1,442 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+* .all {
+  overflow: hidden;
+  position: relative;
+}
+
+* .all header {
+  width: 100%;
+}
+
+* .all header .navbar {
+  width: 100%;
+  padding: 30px;
+  background-color: transparent !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  z-index: 2;
+}
+
+* .all header .navbar .navbar-toggler {
+  color: white;
+  border: transparent;
+}
+
+* .all header .navbar .navbar-toggler .navbar-toggler-icon {
+  color: white;
+}
+
+* .all header .navbar .navbar-collapse {
+  width: 500px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+* .all header .navbar .navbar-collapse .navbar-nav {
+  margin-right: 0 !important;
+}
+
+* .all header .navbar .navbar-collapse .navbar-nav .nav-item {
+  font-size: 12px;
+  font-weight: 1000;
+  padding-right: 20px;
+}
+
+* .all header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+* .all header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link i {
+  font-size: 9px;
+}
+
+* .all header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #ffb400;
+}
+
+* .all header .carousel-fade {
+  width: 100%;
+}
+
+* .all header .carousel-fade .carousel-inner .carousel-item {
+  width: 100%;
+}
+
+* .all header .carousel-fade .carousel-inner .carousel-item .item {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+* .all header .carousel-fade .carousel-inner .carousel-item .item .images {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/bg1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg1.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  -webkit-animation: thing 20s;
+          animation: thing 20s;
+}
+
+* .all header .carousel-fade .carousel-inner .carousel-item .item #images-2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/bg2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg2.jpg);
+}
+
+* .all header .carousel-fade .carousel-inner .carousel-item .item #images-3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/bg3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg3.jpg);
+}
+
+* .all header .carousel-fade .carousel-inner .carousel-item .item .one {
+  width: 100%;
+  top: 20%;
+  z-index: 30;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+* .all header .carousel-fade .carousel-inner .carousel-item .item .one .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* .all header .carousel-fade .carousel-inner .carousel-item .item .one .container h1 {
+  font-size: 60px;
+  line-height: 1.1;
+  color: white;
+  position: relative;
+  font-weight: bolder;
+  -webkit-animation: slideInRight;
+          animation: slideInRight;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+
+* .all header .carousel-fade .carousel-inner .carousel-item .item .one .container P {
+  color: white;
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+* .all header .carousel-fade .carousel-inner .carousel-item .item .one .container .search {
+  width: 250px;
+  border-radius: 150px;
+  background-color: #ffb400;
+  border: none;
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+* .all header .carousel-fade .carousel-inner .carousel-item .item .one .container .search a {
+  color: #ffffff;
+  line-height: 38px;
+  font-weight: 500;
+  font-size: 15px;
+  height: 38px;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+* .all header .carousel-fade .carousel-inner .carousel-item .item .one .container .search a i {
+  margin-left: 8px;
+}
+
+@-webkit-keyframes thing {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
+}
+
+@keyframes thing {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  * .all header .navbar-brand {
+    display: none !important;
+  }
+  * .all header .navbar-toggler {
+    display: none !important;
+  }
+  * .all header .one {
+    padding-bottom: 120px;
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  * .all header .navbar-brand {
+    display: none !important;
+  }
+  * .all header .one {
+    padding-bottom: 120px;
+    padding-top: 30px;
+  }
+}
+
+* .all .yellow {
+  width: 150%;
+  height: 50%;
+  background-color: #ffb400;
+  -webkit-transform: rotate(-2.5deg);
+          transform: rotate(-2.5deg);
+  -webkit-transform-origin: 3% 0;
+          transform-origin: 3% 0;
+  left: -6%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+}
+
+* .all .main {
+  width: 150%;
+  min-height: 120vh;
+  left: -25%;
+  background-color: #242424;
+  position: relative;
+  z-index: 40;
+  -webkit-transform: rotate(-1.5deg);
+          transform: rotate(-1.5deg);
+}
+
+* .all .main .container {
+  width: 63%;
+  min-height: 600px;
+  -webkit-transform: rotate(1.5deg);
+          transform: rotate(1.5deg);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 40px;
+}
+
+* .all .main .container .about-us {
+  width: 100%;
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 170px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .all .main .container .about-us h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+* .all .main .container .about-us h6 {
+  color: white;
+}
+
+* .all .main .container .about-us .divider-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .all .main .container .about-us .divider-text .line {
+  border-bottom: 0.7px solid #888;
+  width: 42%;
+}
+
+* .all .main .container .about-us .divider-text i {
+  color: white;
+}
+
+* .all .main .container .second-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+* .all .main .container .second-part .we-are-salimo {
+  height: 360px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* .all .main .container .second-part .we-are-salimo p {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #eee;
+}
+
+* .all .main .container .second-part .we-are-salimo .our {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+* .all .main .container .second-part .we-are-salimo .our .advantages {
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  padding: 0 20px;
+}
+
+* .all .main .container .second-part .we-are-salimo .search {
+  width: 170px;
+  color: white;
+  background-color: #ffb400;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+* .all .main .container .second-part .about-girl {
+  margin-top: 30px;
+}
+
+* .all .main .container .second-part .about-girl img {
+  max-width: 100%;
+  position: relative;
+  border-radius: 4px;
+}
+
+* .all .main .container .second-part .about-girl::before {
+  border: 2px solid #ffb400;
+  display: inline-block;
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  -webkit-transform: translate3d(22px, -22px, -22px);
+          transform: translate3d(22px, -22px, -22px);
+  border-radius: 4px;
+  padding-top: 30px;
+}
+/*# sourceMappingURL=style.css.map */
