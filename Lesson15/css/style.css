@@ -224,12 +224,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-  * .all header .navbar-brand {
-    display: none !important;
-  }
-  * .all header .navbar-toggler {
-    display: none !important;
-  }
   * .all header .one {
     padding-bottom: 120px;
     padding-top: 30px;
@@ -237,9 +231,6 @@
 }
 
 @media only screen and (min-width: 600px) {
-  * .all header .navbar-brand {
-    display: none !important;
-  }
   * .all header .one {
     padding-bottom: 120px;
     padding-top: 30px;
@@ -248,7 +239,7 @@
 
 * .all .yellow {
   width: 150%;
-  height: 50%;
+  height: 3%;
   background-color: #ffb400;
   -webkit-transform: rotate(-2.5deg);
           transform: rotate(-2.5deg);
@@ -262,13 +253,14 @@
 
 * .all .main {
   width: 150%;
-  min-height: 120vh;
   left: -25%;
   background-color: #242424;
   position: relative;
   z-index: 40;
   -webkit-transform: rotate(-1.5deg);
           transform: rotate(-1.5deg);
+  padding-bottom: 60px;
+  bottom: -25px;
 }
 
 * .all .main .container {
@@ -390,11 +382,16 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 * .all .main .container .second-part .we-are-salimo .our .advantages {
@@ -438,5 +435,972 @@
           transform: translate3d(22px, -22px, -22px);
   border-radius: 4px;
   padding-top: 30px;
+}
+
+* .all .parallax-1 {
+  /* The image used */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/parallax-1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/parallax-1.jpg);
+  /* Set a specific height */
+  min-height: 800px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  /* Create the parallax scrolling effect */
+}
+
+* .all .parallax-1 .manager {
+  padding: 40px 0;
+}
+
+* .all .parallax-1 .manager .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+* .all .parallax-1 .manager .row .image-manager {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+* .all .parallax-1 .manager .row .image-manager img {
+  border: 12px solid #ffb400;
+  border-radius: 50%;
+}
+
+* .all .parallax-1 .manager .row .project-manager {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* .all .parallax-1 .manager .row .project-manager h1 {
+  color: white;
+  font-weight: bolder;
+}
+
+* .all .parallax-1 .manager .row .project-manager h3 {
+  color: #ffb400;
+}
+
+* .all .parallax-1 .manager .row .project-manager .p-1 {
+  color: #eee;
+  font-style: italic;
+  font-weight: 400;
+}
+
+* .all .parallax-1 .manager .row .project-manager .p-2 {
+  color: #cecece;
+  font-size: 14px;
+  border-left: 5px solid #eee;
+  border-color: #ffb400;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+* .all .parallax-1 .manager .row .project-manager .icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+* .all .parallax-1 .manager .row .project-manager .icons ul li {
+  margin: 0 15px 15px 0;
+  text-align: center;
+  border: 3px solid #ffb400;
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+* .all .parallax-1 .manager .row .project-manager .icons ul li:hover i {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  color: white;
+}
+
+* .all .parallax-1 .manager .row .project-manager .icons ul li:hover {
+  background-color: #ffb400;
+}
+
+* .all .parallax-1 .manager .row .project-manager .icons ul li i {
+  width: 63px;
+  height: 63px;
+  color: #ffb400;
+  line-height: 63px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+@media only screen and (max-width: 767px) {
+  * .all .parallax-1 .manager .row .project-manager .icons ul li i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+* .all .yellow-1 {
+  width: 150%;
+  height: 3%;
+  background-color: #ffb400;
+  -webkit-transform: rotate(-2.5deg);
+          transform: rotate(-2.5deg);
+  -webkit-transform-origin: 3% 0;
+          transform-origin: 3% 0;
+  left: -4%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+}
+
+* .all .main-1 {
+  width: 112%;
+  left: -6%;
+  background-color: #242424;
+  position: relative;
+  z-index: 40;
+  -webkit-transform: rotate(-1.5deg);
+          transform: rotate(-1.5deg);
+  bottom: -45px;
+  top: 0px;
+}
+
+* .all .main-1 .container {
+  min-height: 900px;
+  width: 88%;
+  -webkit-transform: rotate(1.5deg);
+          transform: rotate(1.5deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* .all .main-1 .container .our-services {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 120px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+* .all .main-1 .container .our-services h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+* .all .main-1 .container .our-services h6 {
+  color: white;
+}
+
+* .all .main-1 .container .our-services .divider-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .all .main-1 .container .our-services .divider-text .line {
+  border-bottom: 2px solid #888;
+  width: 42%;
+}
+
+* .all .main-1 .container .our-services .divider-text i {
+  color: white;
+}
+
+* .all .main-1 .container .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* .all .main-1 .container .row .flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 250px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  margin: 20px 0;
+}
+
+* .all .main-1 .container .row .flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+* .all .main-1 .container .row .flip-card .flip-card-inner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #151515;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2%;
+}
+
+* .all .main-1 .container .row .flip-card .flip-card-inner .flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  color: #ffb400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+* .all .main-1 .container .row .flip-card .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px 0 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  color: #eee;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  overflow: hidden;
+  border-radius: 2%;
+}
+
+* .all .main-1 .container .row .flip-card .flip-card-back i {
+  position: absolute;
+  z-index: -40;
+  color: #ffb400;
+  opacity: 0.2;
+  top: 0;
+  right: 0;
+  margin: -60px;
+  font-size: 228px;
+}
+
+* .all .main-1 .container .row .flip-card .flip-card-back p {
+  font-size: 13px;
+  padding-top: 10px;
+}
+
+* .all .parallax-2 {
+  /* The image used */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/parallax-2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/parallax-2.jpg);
+  /* Set a specific height */
+  min-height: 700px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: -30px;
+}
+
+* .all .parallax-2 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+* .all .parallax-2 .container #carouselExampleIndicators .carousel-inner {
+  margin-bottom: 10px;
+}
+
+* .all .parallax-2 .container #carouselExampleIndicators .carousel-inner .carousel-item .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 280px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+* .all .parallax-2 .container #carouselExampleIndicators .carousel-inner .carousel-item .text img {
+  width: 120px !important;
+  border: 6px solid #f9f9f9;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+}
+
+* .all .parallax-2 .container #carouselExampleIndicators .carousel-inner .carousel-item .text p {
+  margin: 0;
+}
+
+* .all .parallax-2 .container #carouselExampleIndicators .carousel-inner .carousel-item .text .italy {
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .all .parallax-2 .container #carouselExampleIndicators .carousel-inner .carousel-item .text .italy i {
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+* .all .parallax-2 .container #carouselExampleIndicators .carousel-indicators {
+  position: relative;
+}
+
+* .all .parallax-2 .container #carouselExampleIndicators .carousel-indicators li {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+}
+
+* .all .parallax-2 .container #carouselExampleIndicators .carousel-indicators .active {
+  background-color: #ffb400;
+}
+
+* .all .yellow-2 {
+  width: 150%;
+  height: 3%;
+  background-color: #ffb400;
+  -webkit-transform: rotate(-2.5deg);
+          transform: rotate(-2.5deg);
+  -webkit-transform-origin: -94% 0;
+          transform-origin: -94% 0;
+  left: -6%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+}
+
+* .all .main-2 {
+  padding: 50px 0;
+  width: 121%;
+  min-height: 120vh;
+  left: -11%;
+  background-color: #242424;
+  position: relative;
+  z-index: 40;
+  -webkit-transform: rotate(-1.5deg);
+          transform: rotate(-1.5deg);
+  bottom: -45px;
+  top: -100px;
+}
+
+* .all .main-2 .container {
+  width: 85%;
+  -webkit-transform: rotate(1.5deg);
+          transform: rotate(1.5deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* .all .main-2 .container .our-portfolio {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+* .all .main-2 .container .our-portfolio h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+* .all .main-2 .container .our-portfolio h6 {
+  color: white;
+}
+
+* .all .main-2 .container .our-portfolio .divider-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .all .main-2 .container .our-portfolio .divider-text .line {
+  border-bottom: 2px solid #888;
+  width: 42%;
+}
+
+* .all .main-2 .container .our-portfolio .divider-text i {
+  color: white;
+  font-size: 25px;
+}
+
+* .all .main-2 .container .our-portfolio .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 55%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+* .all .main-2 .container .our-portfolio .buttons .active {
+  background-color: #ffb400;
+}
+
+* .all .main-2 .container .our-portfolio .buttons button {
+  background-color: transparent;
+  border: 2px solid #ffb400;
+  border-radius: 40px;
+  padding: 8px 25px;
+  color: #eee;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+* .all .main-2 .container .our-portfolio .buttons button:hover {
+  background-color: #ffb400;
+}
+
+* .all .main-2 .container .row {
+  margin-top: 30px;
+}
+
+* .all .main-2 .container .row .cards {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 360px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+* .all .main-2 .container .row .cards .card-image {
+  width: 100%;
+  height: 260px;
+  background-image: url(../img/card-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: relative;
+  opacity: 1;
+  border: none;
+}
+
+* .all .main-2 .container .row .cards .card-image .icon-hover {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+* .all .main-2 .container .row .cards .card-image .icon-hover i {
+  color: white;
+  font-size: 35px;
+}
+
+* .all .main-2 .container .row .cards .card-image:hover {
+  opacity: 0.6;
+}
+
+* .all .main-2 .container .row .cards .card-image:hover i {
+  opacity: 1;
+  color: white;
+}
+
+* .all .main-2 .container .row .cards .card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+* .all .main-2 .container .row .cards .card-text h6 {
+  padding-left: 17px;
+  border-left: 3px solid #ffb400;
+  color: white;
+  font-size: 16px;
+}
+
+* .all .main-2 .container .row .cards .card-text p {
+  color: #ccc;
+  font-size: 13px;
+}
+
+* .all .main-2 .container .row #card-2-image {
+  background-image: url(../img/card-2.jpg);
+}
+
+* .all .main-2 .container .row #card-3-image {
+  background-image: url(../img/card-3.jpg);
+}
+
+* .all .main-2 .container .row #card-4-image {
+  background-image: url(../img/card-4.jpg);
+}
+
+* .all .main-2 .container .row #card-5-image {
+  background-image: url(../img/card-5.jpg);
+}
+
+* .all .main-2 .container .row #card-6-image {
+  background-image: url(../img/card-6.jpg);
+}
+
+* .all .main-2 .container .row #card-7-image {
+  background-image: url(../img/card-7.jpg);
+}
+
+* .all .main-2 .container .row #card-8-image {
+  background-image: url(../img/card-8.jpg);
+}
+
+* .all .main-2 .container .row #card-9-image {
+  background-image: url(../img/card-9.jpg);
+}
+
+* .all .parallax-3 {
+  /* The image used */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/parallax-1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/parallax-1.jpg);
+  /* Set a specific height */
+  min-height: 1000px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: -50vh;
+}
+
+* .all .parallax-3 .container {
+  top: 20vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .all .parallax-3 .container .email {
+  width: 70%;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+* .all .parallax-3 .container .email .email-text {
+  color: white;
+}
+
+* .all .parallax-3 .container .email .email-text h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+* .all .parallax-3 .container .email .email-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+* .all .parallax-3 .container .email .email-input .input-group {
+  border-radius: 50px;
+  width: 400px;
+  height: 50px;
+}
+
+* .all .parallax-3 .container .email .email-input .input-group .input-group-text {
+  background-color: #ffb400;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  border: none;
+}
+
+* .all .parallax-3 .container .email .email-input .input-group .input-group-text i {
+  color: white;
+}
+
+* .all .parallax-3 .container .email .email-input .input-group input {
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  height: 50px;
+}
+
+* .all .parallax-3 .container .email .email-input .message {
+  width: 100%;
+  height: 200px;
+  padding: 20px 0 0 25px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  border-style: none;
+}
+
+* .all .parallax-3 .container .email .email-input .email-button {
+  padding: 0;
+  background-color: #ffb400;
+  border-radius: 50px;
+  height: 50px;
+  color: white;
+  border: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+* .all .parallax-3 .container .email .email-input .email-button i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: inline-block;
+}
+
+* .all .parallax-3 .container .email .email-input .email-button i {
+  display: none;
+  padding-left: 5px;
+}
+
+* .all .parallax-3 .container .email .email-input .email-button:hover i {
+  display: inline-block;
+}
+
+* .all .main-3 {
+  background-color: #242424;
+  width: 100%;
+  height: 200px;
+  top: -50vh;
+  position: relative;
+}
+
+* .all .main-3 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 200px;
+}
+
+* .all .main-3 .container .box {
+  max-width: 1350px;
+}
+
+* .all .main-3 .container .box .box-view {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 35px;
+}
+
+* .all .main-3 .container .box .box-view ul {
+  width: 915%;
+  position: relative;
+  -webkit-transition-duration: 30s;
+          transition-duration: 30s;
+  height: 35px;
+}
+
+* .all .main-3 .container .box .box-view ul:hover {
+  -webkit-transform: translate3d(-1650px, 0px, 0px);
+          transform: translate3d(-1650px, 0px, 0px);
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+* .all .main-3 .container .box .box-view ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+  width: 200px;
+  margin-right: 30px;
+}
+
+* .all .main-3 .container .box .box-view ul li img {
+  opacity: 0.7;
+}
+
+* .all .footer {
+  top: -50vh;
+  position: relative;
+  background-color: #151515;
+  width: 100%;
+  height: 300px;
+}
+
+* .all .footer .container {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 300px;
+  color: white;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .all .footer .container .icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+* .all .footer .container .icons ul li {
+  margin: 0 15px 15px 0;
+  text-align: center;
+  border: 3px solid #ffb400;
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+* .all .footer .container .icons ul li:hover i {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  color: white;
+}
+
+* .all .footer .container .icons ul li:hover {
+  background-color: #ffb400;
+}
+
+* .all .footer .container .icons ul li i {
+  width: 42px;
+  height: 42px;
+  color: #ffb400;
+  line-height: 42px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 /*# sourceMappingURL=style.css.map */
